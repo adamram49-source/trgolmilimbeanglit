@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<title>משחק התאמה</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🎯 בחר גרסת משחק</h2>
+
+<select onchange="startGame(this.value)">
+  <option value="match">אנגלית ↔ עברית</option>
+  <option value="reverse">עברית ↔ אנגלית</option>
+</select>
+
+<div id="game"></div>
+
+<br>
+<button onclick="share()">🔗 שתף</button>
+<button onclick="location.href='editor.html'">✏️ ערוך</button>
+<button onclick="location.href='index.html'">🏠 בית</button>
+
+<script src="app.js"></script>
+</body>
+</html>
