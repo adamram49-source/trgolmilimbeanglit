@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8">
+<title>משחק מילים</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎮 משחק לימוד מילים</h1>
+
+<button onclick="location.href='editor.html'">➕ צור משחק חדש</button>
+<button onclick="loadSaved()">📂 משחקים שמורים</button>
+
+<script>
+function loadSaved() {
+  const data = localStorage.getItem("savedGame");
+  if (!data) {
+    alert("אין משחק שמור");
+    return;
+  }
+  location.href = "game.html";
+}
+</script>
+
+</body>
+</html>
